@@ -1,0 +1,22 @@
+/* 响应式布局 */
+@media screen and (max-width:700px){
+    /* portfolio部分 */
+.recent-blog li{
+    width:48.5%;
+   }
+}
+
+@media screen and (max-width:550px){
+    /* 左侧导航栏 */
+    .left-nav{
+        display:none;
+    }
+    /* 右侧内容区 */
+    .main-content{
+        width:100%;
+    }
+    /* portfolio部分 */
+    .recent-blog li{
+        width:99%;
+       }
+}

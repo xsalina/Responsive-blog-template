@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+/* 右边主要内容区 */
+.main-content{
+    width:80%;
+    height:1600px;
+}
+
+
+/* 服务部分 */
+.search{
+    width:97%;
+}
+.search{
+    margin:10% 0 15% 3%;
+}
+
+.search .search-content li{
+    display:inline-block;
+    width:33%;
+}
+.search .search-content li:nth-child(2){
+    margin-right:1%;
+}
+
+.search .search-content li a{
+    color:#228896;
+}
+.search .search-content li span{
+    display:inline-block;
+    width:67%;
+    color:rgba(0, 0, 0, 0.5);
+    line-height:1.6;
+    vertical-align:middle;
+}
+ .search-content i{
+     display:inline-block;
+     width:80px;
+     height:80px;
+     background-color:#F2EEDC;
+     border-radius: 50%; 
+     font-size:40px;
+     color:#279AAA;
+     text-align:center;
+     line-height:80px;
+     transition:2s;
+ }
+ .search-content li:hover i{
+     transform:rotatey(180deg);
+ }
+
+.search-content p{
+     /* width:86%; */
+    color:gray;
+ }
+ 
+.touch a{
+    text-transform:uppercase;
+}
+/* touch部分 */
+.touch{
+    margin-left:3%;
+}
+.touch h3{
+    background:linear-gradient(to right,red 5%,orange 15%,yellow 50%,skyblue 70%);
+    -webkit-background-clip:text;
+    color:transparent;
+    font-size:30px;
+}
+.touch input{
+    width:48%;
+    /* height:10%; */
+}
+.touch .text,.touch .message{
+    /* overflow:hidden; */
+    width:100%;
+    padding:0;
+    border:2px solid rgba(0, 0, 0, 0.1);
+    background-color: #FFFBE8;
+    border-radius:7px;
+    outline:none;
+    text-indent:16px;
+}
+.touch .text {
+    height:54px;
+}
+.touch .text:focus,
+.touch .message:focus{
+    border-color:black;
+}
+.touch .left{
+    width:48%;
+}
+.touch .right{
+    width:48%;
+}
+.touch .message{
+    height:130px;
+    margin-bottom:20px;
+    font-size:20px;
+    resize:none;
+   
+    
+}
+.touch a{
+    display:block;
+    width:33%;
+    padding:15px 20px;
+    background-color:skyblue;
+    color:#fff;
+    letter-spacing:1px;
+}
+
+/* 响应式布局 */
+@media screen and (max-width:900px){
+ /* 服务部分 */
+
+.search .search-content li{
+   width:49%;
+}
+
+.search .search-content li span{
+    width:140px;
+}
+.touch .left {
+    width:100%;
+}
+.touch .right{
+    width:100%;
+    margin-top:20px;
+}
+
+}
+@media screen and (max-width:600px){
+    .left-nav{
+        display:none;
+    }
+    .main-content{
+        width:100%;
+    }
+    .search .search-content li{
+        width:100%;
+    }
+    .touch .left {
+        width:100%;
+    }
+    .touch .right{
+        width:100%;
+        margin-top:20px;
+    }
+
+}

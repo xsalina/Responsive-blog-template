@@ -1,0 +1,197 @@
+@charset "utf-8";
+
+/* 右边主要内容区 */
+.main-content{
+    width:80%;
+    height:1600px;
+}
+/* ABOUT COMPANY 部分 */
+.about{
+    margin-left:3%;
+}
+.about .pic{
+    width:50%;
+}
+.about img{
+    width:100%;
+}
+.about .text{
+    width:47%;
+}
+.about h3{
+    font-weight:bold;
+    letter-spacing:2px;
+    color:transparent;
+    background:linear-gradient(to right,red 3%,orange 15%,yellow 20%,skyblue 30%,red 15%);
+    -webkit-background-clip:text;
+}
+.about p{
+    background:linear-gradient(to right,red 5%,orange 15%,yellow 50%,skyblue 70%);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+/* 服务部分 */
+.search,.recent-blog,.touch,
+.about{
+    width:97%;
+}
+.search{
+    margin:13% 0 10% 3%;
+}
+.search h3{
+    font-weight:bold;
+    letter-spacing:2px;
+    color:transparent;
+    background:linear-gradient(to right,red 1%,orange 4%,yellow 3%,skyblue 10%,black 15%);
+    -webkit-background-clip:text;
+}
+
+.search .search-content li{
+    display:inline-block;
+    width:50%;
+}
+ .search-content i{
+     display:inline-block;
+     width:80px;
+     height:80px;
+     background-color:#F2EEDC;
+     border-radius: 50%; 
+     font-size:40px;
+     color:#279AAA;
+     text-align:center;
+     line-height:80px;
+     transition:2s;
+ }
+ .search-content li:hover i{
+     transform:rotatey(180deg);
+ }
+ .search .search-content li > div{
+    display:inline-block;
+    width:77%;
+    text-align:left;
+ }
+ .search-content h4,.recent-blog h4{
+    letter-spacing:2px;
+ }
+ .search-content p{
+     width:86%;
+    color:gray;
+ }
+ /* recent blog部分*/
+.recent-blog{
+   margin:0 0 18% 3%;
+    
+}
+.recent-blog li{
+    
+    float:left;
+    width:24.25%;
+    background-color:white;
+    
+}
+.recent-blog li+li{
+    margin-left:1%;
+}
+.recent-blog .text{
+    width:calc(100% - 40px);
+    padding:20px;
+    background-color:white;
+}
+.recent-blog  li > a{
+    overflow:hidden;
+    display:block;
+    width:100%;
+    /* height:184px; */
+
+    
+}
+.recent-blog a > img{
+    width:100%;
+    /* height:184px; */
+    transform:scale(1.3);
+    transition:1s;
+}
+.recent-blog li:hover img{
+    transform:scale(1);
+}
+
+.recent-blog li h4,.recent-blog li em,
+.recent-blog .text > a,
+.touch a{
+    text-transform:uppercase;
+}
+.recent-blog li em{
+    color:rgba(0, 0, 0, 0.4);
+    font-size:70%;
+}
+.recent-blog li p{
+    margin:20px 0 20px 0 ;
+    color:rgba(0, 0, 0, 0.5);
+    font-weight:300;
+    line-height:1.6;
+}
+.recent-blog .text > a{
+    font-size:11px;
+    letter-spacing:2px;
+    color:#000;
+}
+.recent-blog .text > a i{
+    vertical-align: middle;
+}
+/* touch部分 */
+.touch{
+    margin-left:3%;
+}
+.touch h3{
+    background:linear-gradient(to right,red 5%,orange 15%,yellow 50%,skyblue 70%);
+    -webkit-background-clip:text;
+    color:transparent;
+    font-size:30px;
+}
+.touch p{
+    width:55%;
+    color:rgba(0, 0, 0, 0.5);
+}
+.touch a{
+    padding:10px;
+    background-color:skyblue;
+    color:#fff;
+    letter-spacing:1px;
+}
+/* 响应式布局 */
+@media screen and (max-width:900px){
+    /* ABOUT COMPANY 部分 */
+    .about .pic{
+        width:100%;
+    }
+    .about .text{
+        float:left;
+        width:100%;
+        margin-top:30px;
+
+    }
+    .about h3{
+        margin-bottom:20px;
+    }
+    .search .search-content li{
+        width:49%;
+    }
+
+}
+@media screen and (max-width:700px){
+    /* 左侧导航栏 */
+    .left-nav{
+        display:none;
+    }
+    /* 右侧内容区 */
+    .main-content{
+        width:100%;
+    }
+    /* search部分 */
+    .search .search-content li{
+        width:100%;
+       
+    }
+}
+
