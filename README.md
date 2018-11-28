@@ -1,1 +1,1 @@
-# Responsive-blog-template
+博客响应式模板
